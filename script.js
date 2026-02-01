@@ -73,8 +73,10 @@ subBtn.addEventListener("click", (e) => {
 
   if(isValid){
     successMsg.style.display = "flex";
+    document.getElementById("form").reset();
   }
   else{
     successMsg.style.display = "none";
   }
 });
+
