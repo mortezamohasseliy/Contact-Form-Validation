@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="success-message" id="success">
+        <div class="icon">✓</div>
+        <div class="text">
+          <strong>Message Sent!</strong>
+          <p>Thanks for completing the form. We'll be in touch soon!</p>
+        </div>
+      </div>
+
+      <h1>Contact Us</h1>
+      <form class="form">
+        <div class="form-row">
+          <div class="form-field">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" />
+            <p id="nameError"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" />
+            <p id="familyError"></p>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" />
+          <p id="emailErr"></p>
+        </div>
+
+        <label for="Query" style="font-weight: bold">Query Type</label>
+        <div class="form-row" style="margin-top: 10px">
+          <div class="form-field">
+            <label class="option">
+              <input type="radio" name="query" id="query"/>
+              <span class="radio"></span>
+              General Enquiry
+            </label>
+            <p id = "result"></p>
+          </div>
+
+          <div class="form-field">
+            <label class="option">
+              <input type="radio" name="query" id="request"/>
+              <span class="radio"></span>
+              Support Request
+            </label>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+          <p id="text"></p>
+        </div>
+
+        <div>
+          <input type="checkbox" id="team" name="team" style="accent-color: #0c7d69;"/>
+          <label for="team">I conset to being contacted by the team</label>
+          <p id="consent"></p>
+        </div>
+
+        <div class="form-field">
+          <button id="submit" type="submit">Send Message</button>
+        </div>
+      </form>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
