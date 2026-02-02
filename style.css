@@ -1,4 +1,6 @@
-
+:root{
+  font-family: 'karla'- sans-serif;
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +8,7 @@
 }
 
 body {
-  font-family:"(https://fonts.google.com/specimen/Karla)"
-;
+  font-family: 'karla' - sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
