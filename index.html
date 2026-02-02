@@ -20,25 +20,25 @@
       <form class="form" id = "form">
         <div class="form-row">
           <div class="form-field">
-            <label for="firstName">First Name</label>
-            <input type="text" id="firstName" name="firstName" />
+            <label for="firstName">First Name <span>*</span></label>
+            <input type="text" id="firstName" name="firstName" maxlength="5"/>
             <p id="nameError"></p>
           </div>
 
           <div class="form-field">
-            <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" name="lastName" />
+            <label for="lastName">Last Name <span>*</span></label>
+            <input type="text" id="lastName" name="lastName"  maxlength="10"/>
             <p id="familyError"></p>
           </div>
         </div>
 
         <div class="form-field">
-          <label for="email">Email Address</label>
+          <label for="email">Email Address <span>*</span></label>
           <input type="email" id="email" name="email" />
           <p id="emailErr"></p>
         </div>
 
-        <label for="Query" style="font-weight: bold">Query Type</label>
+        <label for="Query" style="font-weight: bold">Query Type <span>*</span></label>
         <div class="form-row" style="margin-top: 10px">
           <div class="form-field">
             <label class="option">
@@ -58,14 +58,14 @@
           </div>
         </div>
         <div class="form-field">
-          <label for="message">Message</label>
+          <label for="message">Message <span>*</span></label>
           <textarea id="message" name="message" rows="4"></textarea>
           <p id="text"></p>
         </div>
 
         <div>
           <input type="checkbox" id="team" name="team" style="accent-color: #0c7d69;"/>
-          <label for="team">I conset to being contacted by the team</label>
+          <label for="team">I conset to being contacted by the team <span>*</span></label>
           <p id="consent"></p>
         </div>
 

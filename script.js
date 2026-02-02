@@ -36,7 +36,12 @@ subBtn.addEventListener("click", (e) => {
 
   function isValidEmail() {
     let inputEm = userEmail.value;
-    if (!inputEm.includes("@", ".com")) {
+    if (inputEm === "") {
+      emailErr.textContent = "This field is required!";
+      emailErr.style.color = "red";
+      isValid = false;
+    } 
+    else if (!inputEm.includes("@", ".com")) {
       emailErr.textContent = "please enter a valid email!";
       emailErr.style.color = "red";
       isValid = false;
@@ -71,12 +76,10 @@ subBtn.addEventListener("click", (e) => {
     user.textContent = "";
   }
 
-  if(isValid){
+  if (isValid) {
     successMsg.style.display = "flex";
     document.getElementById("form").reset();
-  }
-  else{
+  } else {
     successMsg.style.display = "none";
   }
 });
-
