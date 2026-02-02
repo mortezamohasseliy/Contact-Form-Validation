@@ -2,9 +2,6 @@
   --font-main: 'Karla', sans-serif;
 }
 
-html {
-  font-family: var(--font-main);
-}
 * {
   margin: 0;
   padding: 0;
@@ -231,4 +228,5 @@ button:hover {
     width: calc(100% - 32px);
     font-size: 0.85rem;
   }
+
 }
