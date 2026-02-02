@@ -1,5 +1,9 @@
-:root{
-  font-family: 'karla'- sans-serif;
+:root {
+  --font-main: 'Karla', sans-serif;
+}
+
+html {
+  font-family: var(--font-main);
 }
 * {
   margin: 0;
